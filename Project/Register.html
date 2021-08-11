@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>The Fashion Pet</title>
+</head>
+<body>
+    
+    <header class="site-header">
+        <img src="pet-logo-png.png" alt="logo">
+        <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="About.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Register.html" tabindex="-1" aria-disabled="true">Register</a>
+            </li>
+          </ul>
+    </header>
+
+    <main class="container">
+        <h1 class="display-1">Register</h1>
+        <form class="container" action="#">
+          <div>
+            <label for="petName" class="form-label">Name:</label>
+            <input class="form-control"  type="text" name="petName" id="petName" >
+          </div>
+          <div>
+            <label for="petAge" class="form-label">Age:</label>
+            <input class="form-control"  type="text" name="petAge" id="petAge">
+          </div>
+          <div>
+            <label for="petGender" class="form-label">Gender:</label>
+            <input class="form-control"  type="text" name="petGender" id="petGender">
+          </div>
+          <div>
+            <label for="petBreed" class="form-label">Breed:</label>
+            <input class="form-control"  type="text" name="petBreed" id="petBreed">
+          </div>
+          <div>
+            <label for="petService" class="form-label">Service Requested:</label>
+            <select class="form-control"  name="petService" id="petService">
+            <option value="Full Service">Full Service</option>
+            <option value="Nails Cut">Nails Cut</option>
+            <option value="Groomin">Grooming</option>
+            <option value="Hair Cut">Hair Cut</option>
+          </select>
+          </div>
+          <div>
+            <label for="ownerName" class="form-label">Owner's Name:</label>
+            <input class="form-control"  type="text" name="ownerName" id="ownerName">
+          </div>
+          <div>
+            <label for="contactPhone" class="form-label">Contact Phone:</label>
+            <input class="form-control"  type="tel" name="contactPhone" id="contactPhone">
+          </div>
+        </form>
+        <button class="btn btn-primary" onclick="register();">Register</button>
+    </main>
+    
+    <div>
+          <p>Registered pets are displayed below!</p>
+          
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">Name:</th>
+                  <th scope="col">Age:</th>
+                  <th scope="col">Gender:</th>
+                  <th scope="col">Breed:</th>
+                  <th scope="col">Service:</th>
+                  <th scope="col">Owner's Name:</th>
+                  <th scope="col">Contact Phone #:</th>
+                </tr>
+              </thead>
+              <tbody id="table-pets"></tbody>
+            </table>
+      
+    </div>
+  
+    <footer id="footer-site">
+
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

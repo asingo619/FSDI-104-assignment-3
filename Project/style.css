@@ -1,0 +1,24 @@
+.site-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e1e1e1;
+}
+img{
+    width: 20rem;
+}
+#pets{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 1rem;
+    row-gap: 1rem;
+}
+.pet{
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: #ece8e8e1;
+    padding: 1rem;
+}
+.bordered{
+    border: 1px solid black;
+}
